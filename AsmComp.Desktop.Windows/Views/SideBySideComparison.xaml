@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="AsmComp.Desktop.Windows.Views.SideBySideComparison"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AsmComp.Desktop.Windows.Views"
+             mc:Ignorable="d" 
+             MinHeight="80" MinWidth="200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="3" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <TreeView Background="White" Grid.Column="0" x:Name="treeView1" />
+        <Border Background="Black" Grid.Column="1" />
+        <TreeView Background="White" Grid.Column="2" x:Name="treeView2" />
+    </Grid>
+</UserControl>

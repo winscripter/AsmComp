@@ -1,0 +1,29 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="HierarchyViewElementBackground" Color="#f8f8f8" />
+    <SolidColorBrush x:Key="HierarchyViewElementForeground" Color="#141414" />
+    <SolidColorBrush x:Key="HierarchyViewElementBorder" Color="#f8f8f8" />
+    <SolidColorBrush x:Key="HierarchyViewElementMouseOverBackground" Color="#f8f8f8" />
+    <SolidColorBrush x:Key="HierarchyViewElementMouseOverForeground" Color="#141414" />
+    <SolidColorBrush x:Key="HierarchyViewElementMouseOverBorder" Color="#f8f8f8" />
+    <SolidColorBrush x:Key="HierarchyViewElementFocusedBackground" Color="#f8f8f8" />
+    <SolidColorBrush x:Key="HierarchyViewElementFocusedForeground" Color="#141414" />
+    <SolidColorBrush x:Key="HierarchyViewElementFocusedBorder" Color="#f8f8f8" />
+
+    <SolidColorBrush x:Key="WelcomeViewBackground" Color="#f8f8f8" />
+    <SolidColorBrush x:Key="WelcomeViewACTextBackground" Color="#f8f8f8" />
+    <SolidColorBrush x:Key="WelcomeViewACTextForeground" Color="Purple" />
+    <SolidColorBrush x:Key="WelcomeViewForeground" Color="#242424" />
+
+    <SolidColorBrush x:Key="ButtonForeground" Color="#141414" />
+    <SolidColorBrush x:Key="ButtonBackground" Color="#f8f8f8" />
+    <SolidColorBrush x:Key="ButtonBorder" Color="#141414" />
+    <SolidColorBrush x:Key="ButtonMouseOverForeground" Color="#141414" />
+    <SolidColorBrush x:Key="ButtonMouseOverBackground" Color="#f8f8f8" />
+    <SolidColorBrush x:Key="ButtonMouseOverBorder" Color="#141414" />
+    <SolidColorBrush x:Key="ButtonFocusedForeground" Color="#195fbd" />
+    <SolidColorBrush x:Key="ButtonFocusedBackground" Color="#f8f8f8" />
+    <SolidColorBrush x:Key="ButtonFocusedBorder" Color="#195fbd" />
+
+    <SolidColorBrush x:Key="SharedPaneBackground" Color="#f8f8f8" />
+</ResourceDictionary>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="AsmComp.Desktop.Windows.AboutDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsmComp.Desktop.Windows"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="About AsmComp" Height="250" Width="400" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel>
+            <TextBlock FontSize="32" FontWeight="SemiBold" Foreground="Purple" HorizontalAlignment="Center">AsmComp</TextBlock>
+            <TextBlock FontSize="18" HorizontalAlignment="Center">stands for <Run FontWeight="Bold">Assembly Comparer</Run></TextBlock>
+            <TextBlock FontSize="22" HorizontalAlignment="Center">Version 1.0; released on August 27, 2024</TextBlock>
+            <TextBlock FontSize="16" HorizontalAlignment="Center" Margin="0,15,0,0">Built by <Run FontWeight="Bold">winscripter</Run> (see <Run Foreground="LimeGreen" FontFamily="Consolas" FontSize="14">github.com/winscripter</Run>)</TextBlock>
+            <Button Click="CloseAppWhenOKIsClicked" Content="OK" HorizontalAlignment="Center" Margin="0,30,0,0" Width="100" Height="24" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,64 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="HierarchyViewStyle" TargetType="{x:Type Border}">
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="BorderBrush" Value="{DynamicResource HierarchyViewElementBorder}" />
+        <Setter Property="Background" Value="{DynamicResource HierarchyViewElementBackground}" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource HierarchyViewElementMouseOverForeground}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource HierarchyViewElementMouseOverBorder}" />
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Background" Value="{DynamicResource HierarchyViewElementFocusedForeground}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource HierarchyViewElementFocusedBorder}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="IsChildOfHierarchyViewElement" TargetType="{x:Type TextBlock}">
+        <Setter Property="Background" Value="{DynamicResource HierarchyViewElementBackground}" />
+        <Setter Property="Foreground" Value="{DynamicResource HierarchyViewElementForeground}" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="{DynamicResource HierarchyViewElementMouseOverForeground}" />
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Foreground" Value="{DynamicResource HierarchyViewElementFocusedForeground}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="{DynamicResource ButtonBackground}" />
+        <Setter Property="Foreground" Value="{DynamicResource ButtonForeground}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonBorder}" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border 
+                    Background="{TemplateBinding Background}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="{TemplateBinding BorderThickness}">
+                        <ContentPresenter 
+                        HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ButtonMouseOverBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource ButtonMouseOverForeground}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource ButtonMouseOverBorder}" />
+            </Trigger>
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ButtonFocusedBackground}" />
+                <Setter Property="Foreground" Value="{DynamicResource ButtonFocusedForeground}" />
+                <Setter Property="BorderBrush" Value="{DynamicResource ButtonFocusedBorder}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

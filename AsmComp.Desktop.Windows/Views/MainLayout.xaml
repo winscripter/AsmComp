@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="AsmComp.Desktop.Windows.Views.MainLayout"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AsmComp.Desktop.Windows.Views"
+             mc:Ignorable="d" 
+             MinHeight="140" MinWidth="240">
+    <Grid Background="{DynamicResource SharedPaneBackground}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Menu x:Name="menu">
+            <MenuItem Header="File">
+                <MenuItem Header="Exit" Click="FileExit" />
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="About AsmComp" Click="BringAboutWindow" />
+            </MenuItem>
+        </Menu>
+
+        <DockingManager x:Name="dockManager" Grid.Row="1">
+            <DockingManager.Theme>
+                <Vs2013LightTheme />
+            </DockingManager.Theme>
+            <LayoutRoot>
+                <LayoutPanel Orientation="Horizontal">
+                    <LayoutDocumentPane x:Name="Tabs">
+                    </LayoutDocumentPane>
+                </LayoutPanel>
+            </LayoutRoot>
+        </DockingManager>
+    </Grid>
+</UserControl>
