@@ -1,4 +1,5 @@
-<center><h1>AsmComp</h1></center>
+<h1 align=center>AsmComp</h1>
+<h1 align=center><img src="https://github.com/winscripter/AsmComp/blob/main/AsmComp.png?raw=true" height="64" width="64" /></h1>
 When you have two .NET assemblies with the same size and most of the file metadata, it might be difficult to tell whether these two assemblies have differences, and what
 these differences are. If you load these assemblies into AsmComp, you can see the differences side-by-side.
 
