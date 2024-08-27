@@ -1,0 +1,2 @@
+# AsmComp
+.NET assembly comparer
